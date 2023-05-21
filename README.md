@@ -73,7 +73,7 @@ Valores de las diferentes métricas de loss obtenidas durante el entrenamiento d
 
 ### Desempeño
 
-<center> <img src="Images/img_desempenio.pnh" width="500px"/> </center>
+<center> <img src="Images/img_desempenio.png" width="500px"/> </center>
 Se puede notar que los resultados obtenidos por la red neuronal en la detección de peatones fueron un éxito, dado que se logró una precisión de 0.90 y un recall de 0.96.
 La precisión indica la proporción de resultados positivos verdaderos, Es decir, se logró que el 90% de las detecciones marcadas como peatones por la red neuronal fueran realmente peatones. Por otro lado, el recall indica la proporción de resultados positivos verdaderos En este caso, se logró que la red neuronal detectara el 96% de los peatones presentes en la imagen. 
 
