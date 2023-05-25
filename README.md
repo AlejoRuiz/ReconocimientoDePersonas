@@ -39,6 +39,12 @@ Los modelos preentrenados como resultado de este trabajo pueden encontrarse en l
 | ```bestJetson.pt``` | Este archivo almacena los valores de los pesos de todas las capas del modelo después de un entrenamiento exitoso. Este fue el resultado del entrenamiento arrojado con el las instalaciones de [requirements_jetson]|
 
 ## Entrenamiento 
+**⚠️** Para el entrenamiento de los modelos es necesario descargar la base de datos [MS-COCO](https://cocodataset.org/#home). Antes de ejecutar el entrenamiento, asegúrese de que puede descargar los datos correspondientes
+
+Entrene un modelo YOLOv5s en COCO128 especificando el conjunto de datos, tamaño del lote, tamaño de la imagen preentrenado ```yolov5s.pt```
+```
+python train.py --img 640 --batch 16 --epochs 500 --data coco128.yaml --weights yolov5s.pt --cache ram
+```
 
 <!--- 
 Alejo, por favor expande esta parte o ponla un poco más específica. Piensa en que la idea de esto es que otra persona vea este repositorio y pueda replicar paso a paso todo lo que hiciste para reentrenar yolo como lo reentrenaste. Eso se llama reproducibilidad y es la idea de compartir código --->
@@ -88,8 +94,14 @@ La precisión indica la proporción de resultados positivos verdaderos, Es decir
 ## Agradecimientos
 
 Agradecimientos especiales al [programa de internacionalización Delfin](https://www.programadelfin.org.mx/sitio/estudiantes-intercultural.php) y al [Tecnológico de Estudios Superiores de Jocotitlán](https://tesjo.edomex.gob.mx/) por permitirme comenzar este trabajo en el marco de un intercambio académico, especialmente a los profesores Rubén Fonnegra, Juan Carlos Briñez <!-- profesor de méxico!-->.
+Quiero expresar mi más sincero agradecimiento a los docentes de acompañamiento de la institución universitaria Pascual Bravo, Rubén Fonegra y Juan Carlos Briñez. Su dedicación, apoyo y guía han sido fundamentales en mi desarrollo académico y personal. Gracias a su compromiso, he podido crecer y alcanzar mis metas.
+
+También quiero agradecer al programa de internacionalización Delfin y al Tecnológico de Estudios Superiores de Jocotitlán. Su iniciativa de promover intercambios académicos y culturales ha brindado una invaluable oportunidad para ampliar mis horizontes y enriquecer mi experiencia educativa. Estoy profundamente agradecido por la oportunidad de haber participado en este programa.
 
 Este repositorio ha sido creado y construido con el apoyo de la [Institución Universitaria Pascual Bravo](https://pascualbravo.edu.co/) (IUPB) y está basado en el repositorio de [YOLOv5](https://github.com/ultralytics/yolov5). 
+Agradezco sinceramente a Rubén Fonegra, Juan Carlos Briñez y al programa "Delfin" por su compromiso, dedicación y por brindarme la posibilidad de crecer y aprender en un entorno académico enriquecedor. Sus contribuciones han sido de gran valor y han dejado una huella significativa en mi trayectoria educativa.
+
+Este repositorio está basado en [YOLOv5](https://github.com/ultralytics/yolov5). 
 
 
 ## Licencia
